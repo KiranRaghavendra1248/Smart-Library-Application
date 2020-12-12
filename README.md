@@ -18,7 +18,7 @@ The record includes the USN of the person borrowing the book , the name of the b
 # HOW TO RUN
 1. Git clone the repository into the local system.
 2. Install the necessary dependencies in requirements.txt using the following command
-'''
+```
 pip install -r requirements.txt
-'''
+```
 3. Run the run_final.py file and make sure to add face data as ground truth value before selecting detection file.
