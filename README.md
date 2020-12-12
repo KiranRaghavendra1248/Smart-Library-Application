@@ -1,5 +1,5 @@
 # DSCWOW_SMARTLIBRARY
-Library system automation using Face Recognition and Optical Character Recogntion
+Library system automation using Real-Time Face Recognition and Optical Character Recogntion
 
 # OBJECTIVE
 Automation of  libraries in schools and colleges , for effective storage of records of students who frequent the libraries to borrow books.
