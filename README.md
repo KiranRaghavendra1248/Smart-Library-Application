@@ -22,3 +22,4 @@ The record includes the USN of the person borrowing the book , the name of the b
 pip install -r requirements.txt
 ```
 3. Run the run_final.py file and make sure to add face data as ground truth value before selecting detection file.
+4. Note: Look at the images in the Result folder for images on how to hold the book for recognition and for sample expected output.
