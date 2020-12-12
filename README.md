@@ -14,3 +14,11 @@ The network verifies the person using One Shot Learning using a Siamese Network 
 We then use OCR (Optical Character Recognition) to automate the process of identifying the name of the book borrowed, 
 and in this manner we can store the record of the person borrowing the book.
 The record includes the USN of the person borrowing the book , the name of the book and the date and time of when the book was borrowed. 
+
+# HOW TO RUN
+1. Git clone the repository into the local system.
+2. Install the necessary dependencies in requirements.txt using the following command
+'''
+pip install -r requirements.txt
+'''
+3. Run the run_final.py file and make sure to add face data as ground truth value before selecting detection file.
