@@ -17,7 +17,11 @@ The record includes the USN of the person borrowing the book , the name of the b
 
 # HOW TO RUN
 1. Git clone/download the repository into the local system.
-2. Install the necessary dependencies in requirements.txt using the following command in a new virtual environment
+2. Install torch,torchvision first and the necessary dependencies in requirements.txt next 
+using the following commands in a new virtual environment(with python3, 64 bit installed)
+```
+pip install torch==1.7.1+cpu torchvision==0.8.2+cpu torchaudio===0.7.1 -f https://download.pytorch.org/whl/torch_stable.html
+```
 ```
 pip install -r requirements.txt
 ```
