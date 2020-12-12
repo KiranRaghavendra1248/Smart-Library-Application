@@ -17,7 +17,7 @@ The record includes the USN of the person borrowing the book , the name of the b
 
 # HOW TO RUN
 1. Git clone/download the repository into the local system.
-2. Install the necessary dependencies in requirements.txt using the following command
+2. Install the necessary dependencies in requirements.txt using the following command in a new virtual environment
 ```
 pip install -r requirements.txt
 ```
