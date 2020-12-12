@@ -7,7 +7,7 @@ Our main aim is to remove the current drawbacks i.e the requirement of a physica
 We completely automate the process of borrowing a book so the person who borrows the book has zero or minimal contact with other people.
 
 # IMPLEMENTATION
-We use the infamous MTCNN algorithm to detect extract and align faces .
+We use the famous MTCNN algorithm to detect extract and align faces .
 The software requires a real time video of the person which spans for 20 seconds as the ground truth value, which is used to train our model.
 The student then enters his USN/roll number or anything that uniquely identifies them in their place of study.
 The network verifies the person using One Shot Learning using a Siamese Network  when he enters his USN.
