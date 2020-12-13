@@ -180,6 +180,7 @@ def detection():
     while temp=='y':
         print('Image will be captured in 5 sec')
         print('Avoid sudden shaking for better results')
+        time.sleep(5)
         v_cap = cv2.VideoCapture(0)
         v_cap.set(cv2.CAP_PROP_FRAME_WIDTH, image_size)
         v_cap.set(cv2.CAP_PROP_FRAME_HEIGHT, image_size)
