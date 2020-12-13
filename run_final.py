@@ -100,7 +100,7 @@ def detection():
     device = device = torch.device(
         "cuda" if torch.cuda.is_available()
         else "cpu")
-    bbx_color = (0, 255, 255)
+    bbx_color = (0, 255, 0)
     wait_time=10 # For face scan
     time_to_adjust=10 # Before book scan begins
 
@@ -129,8 +129,6 @@ def detection():
     except FileNotFoundError:
         print('Face data doesnt exist for this USN.')
         exit()
-    usn_nums_=usn_nums.copy()
-    faces_=faces.copy()
     # Infinite Face Detection Loop
     v_cap = cv2.VideoCapture(0)
     v_cap.set(cv2.CAP_PROP_FRAME_WIDTH, image_size)
@@ -152,7 +150,9 @@ def detection():
             boxes.append(batch_boxes)
             boxes_duplicate = boxes.copy()
             # show imgs with bbxs
-            face_results.append(show_images(frames_duplicate, boxes_duplicate, bbx_color,transform,threshold,model,faces,usn_nums,usn_number))
+            img,result=show_images(frames_duplicate, boxes_duplicate, bbx_color,transform,threshold,model,faces,usn_nums,usn_number)
+            face_results.append(result)
+            cv2.imshow('Detection',img)
             frames = []
             boxes = []
         if cv2.waitKey(1) & 0xFF == ord('q'):

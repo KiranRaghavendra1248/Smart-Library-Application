@@ -69,8 +69,7 @@ def show_images(frames, boxes, color,transform,threshold,model,faces,usn_nums,us
                     cv2.putText(img, 'Unknown' + ': ' + '{0}'.format(diff), (start[0], start[1] - 10),
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 1)
                     temp = 0
-        cv2.imshow('Detection', img)
         if temp == 1 and usn_number==person:
-            return 1
+            return img,1
         else:
-            return 0
+            return img,0
