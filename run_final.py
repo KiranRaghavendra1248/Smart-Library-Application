@@ -127,7 +127,7 @@ def detection():
                 faces.append(face)
                 usn_nums.append(usn_)
     except FileNotFoundError:
-        print('Face data doesnt exist for this USN.')
+        print('Dataset folder is corrupted')
         exit()
     # Infinite Face Detection Loop
     v_cap = cv2.VideoCapture(0)
